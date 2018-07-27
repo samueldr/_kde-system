@@ -27,6 +27,11 @@
     home = "/home/alice";
     description = "Alice Foobar";
     extraGroups = [ "wheel" "networkmanager" ];
+    initialHashedPassword = "";
+  };
+
+  virtualisation = {
+    memorySize = 1024*4;
   };
 
   # For serial inside the qemu vm.
